@@ -470,7 +470,7 @@ def country_page():
             col_c_chart, col_c_tbl = st.columns([3, 2])
             with col_c_chart:
                 st.plotly_chart(
-                    build_horizontal_bar(customs, y_col="name_fa", x_col="export_value_musd", title=f"Top Customs Offices for {selected_country}", top_n=10, height=450),
+                    build_horizontal_bar(customs, y_col="name_fa", x_col="export_value_musd", title=f"Top Customs Offices for {selected_country}", top_n=10, height=510),
                     use_container_width=True,
                 )
             with col_c_tbl:
